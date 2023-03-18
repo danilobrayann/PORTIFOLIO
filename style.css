@@ -1,0 +1,173 @@
+* {
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+
+:root{
+
+   --text-color: rgb(177, 67, 250);
+   --bg-url: url(assets/buraco.jpg);
+   --switch-bg-url: url(assets/moon-stars.svg);
+
+}
+
+.Light {
+   --text-color: red;
+   --bg-url: url(assets/bgm-back.jpg); 
+
+   --switch-bg-url: url(assets/sun.svg);
+}
+
+
+
+
+body {
+   background-image: var(--bg-url); 
+    
+   
+    
+
+   
+   
+}
+
+body * { font-family: 'Inter', sans-serif;  
+color: var(--text-color) ;
+font-weight: bold
+font-size:500 medium;
+
+}
+
+#container0{
+  
+   width: 360px;
+   margin: auto;
+   margin: 56px auto 0px ;
+}
+
+#PROFILE img {
+   width: 112px ;
+   display: block;
+   margin: auto;
+   padding: 6px;
+}
+
+#p1{ 
+   text-align: center;
+   font-weight: 500;
+   line-height: 24px;
+   margin: 8px;
+
+
+}
+/* links da linha ,ESCREVER-SE NO NLW ,baixar meu ebook,Vê meu portfolio */ 
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+  
+}
+
+ul li a {
+background:rgba(255, 255, 255, 0.377);
+display: flex;
+justify-content: center;
+padding: 26px 16px;
+align-items: center;
+border: 1px solid rgb(255,255, 255,0.1);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+text-decoration: none;
+font-weight: 500;
+transition: background 0.2s;
+border-radius: 8px;
+
+}
+/*  bordas das linhas */
+ul li a:hover {
+   background:rgb(255,255, 255,0.05);
+   border: 1.5px solid rgb(255, 255, 255)
+
+}
+
+
+/*  redes social */
+
+#social_links {
+   display: flex;
+   gap: 16px;
+   padding: 24px  0;
+   font-size: 28px;
+   justify-content: center;
+}
+
+/*  borda nas rede social circulo */
+#social_links a:hover {
+
+background: rgb(225, 255, 255, 0.2);
+
+
+
+}
+
+/*  circulo mais a linhado */
+#social_links a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 16px;
+   transition: background 0.2s;
+   border-radius: 50%;
+}
+
+footer {
+
+   padding: 12px 0;
+   text-align: center;
+}
+
+#switch button {
+
+   width: 32px;
+   height: 32px;
+   background: white   var( --switch-bg-url) no-repeat center ;
+   border: 0;
+   border-radius: 50%;
+   position: absolute;
+   z-index: 1;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0;
+   
+   
+}
+
+.Light #switch button {
+
+right: 0;
+left: initial;
+
+}
+
+#switch span {
+display: block;
+width: 64px;
+height: 24px;
+background: var(--surface-color);
+border: 1px solid var(--stroke-color);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter:blur(4px) ;
+border-radius: 9999px;
+
+
+
+}
+
+#switch {
+   position: relative;
+   width: 64px;
+   margin: 4px auto;
+}
